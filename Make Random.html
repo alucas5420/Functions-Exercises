@@ -1,0 +1,28 @@
+<!-- Adam Lucas -->
+<!-- 11/3/2022 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- The title -->
+
+    <title>Make Random</title>
+</head>
+<body>
+
+<!-- Making the button -->
+
+<button onclick="random();">CLICK ME</button> 
+<h1 id="h1"></h1>
+
+<!-- Setting up the script -->
+
+<script type="text/javascript">
+    function random() {
+        const num = Math.ceil(Math.random() * 10);
+        document.getElementById('h1').innerHTML=num;
+    }
+</script>
+</body>
+</html>

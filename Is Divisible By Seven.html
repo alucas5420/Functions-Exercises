@@ -1,0 +1,45 @@
+<!-- Adam Lucas -->
+<!-- 11/3/2022 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- The title -->
+
+<title>Is Divisible by Seven</title>
+
+</head>
+<body>
+
+<!-- Areas for input -->
+
+<input type ="number" name ="number" id ="inputvalue" placeholder="Enter number"><br>
+<div id ="result"></div><br>
+<input type ="button" value ="Check" onclick=" return checkDivisiblity()">
+<script>
+
+<!-- The JavaScript area -->
+
+function checkDivisiblity(){
+let x = document.getElementById("inputvalue").value;
+if( x%7==0){
+
+<!-- If the number is divisible by 7, this result will occur. -->
+
+document.getElementById("result").innerHTML="The number is divisible by 7";
+return true;
+}
+
+<!-- If the number is not divisible by 7, this result will occur. -->
+
+else{
+document.getElementById("result").innerHTML="The number is not divisible by 7";
+return false;
+
+}
+    }
+
+</script>
+</body>
+</html>
